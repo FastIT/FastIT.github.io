@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FastIT</title>
+    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://localhost:8080</link>
+    <description>FastIT Société Générale - Technical Blog</description>
+    <pubDate>Mon, 12 Sep 2016 02:00:00 +0200</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>First Day with Pepper</title>
+      <link>http://localhost:8080/articles/first-day-with-pepper/</link>
+      <pubDate>Mon, 12 Sep 2016 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/first-day-with-pepper/</guid>
+      <author></author>
+      <description>&lt;p&gt;Bienvenue sur le blog de FastIT&lt;/p&gt;
+&lt;p&gt;Nous avons le grand privilège d’être dans les locaux d’IBM pour nous former à l’utilisation du robot Pepper de la société Aldebaran.&lt;/p&gt;
+&lt;p&gt;1 seule semaine pour apprendre les rudiments de la programmation de robot, et se familiariser avec les services cognitifs de Bluemix (le SASS de IBM).&lt;/p&gt;
+&lt;p&gt;Ca va être chaud !&lt;/p&gt;
+&lt;p&gt;Après quelques heures on sait allumer, éteindre, rebooter le robot.
+Pepper a un mode de vie &lt;em&gt;autonome&lt;/em&gt;, plutôt drôle au départ, assez agaçant rapidement… elle essaye de comprendre son environnement, mais se trompe souvent, et croit qu’on s’adresse a elle tout le temps… dur dans une salle de cours.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/first-day-with-pepper/pictures/IMG_20160912_164617.jpg&quot; alt=&quot;selfie&quot;&gt;
+l’inevitable selfie!&lt;/p&gt;
+&lt;p&gt;Très vite on enchaine sur l’IDE conçu par Aldebaran pour &lt;em&gt;piloter&lt;/em&gt; le robot, &lt;em&gt;programmer&lt;/em&gt; &lt;em&gt;déployer&lt;/em&gt; les &lt;em&gt;behaviors&lt;/em&gt; de pepper.&lt;/p&gt;
+&lt;p&gt;On passe pas mal de temps à &lt;em&gt;comprendre&lt;/em&gt; les possibilités d’intéraction verbale avec le robot.
+Le module de &lt;em&gt;dialog&lt;/em&gt; est bien fait et complet. Il interagit avec le reste du robot au moyen d’events, et fourni une super base de travail.
+Pepper a un lexique verbal extrêmement limité, en fait, elle ne comprend que ce qu’elle connait.
+Ce qui implique de lui fournir au préalable une bonne liste de mots qu’elle pourrait comprendre. Sinon elle va essayer de trouver le best match parmi les mots qu’elle attend.&lt;/p&gt;
+&lt;p&gt;C’est assez perturbant au départ. Mais ça lui donne un vrai contexte d’évolution. Et une fois le lexique defini, la reconnaissance vocale est excellente, fiable et rapide.
+Le lexique est défini pour un scénario de &lt;em&gt;dialog&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Ce qu’il faut en retenir, c’est que les dialogues sont au final des scripts, si on se trouve dans un cas non traité on fait partir le dialogue dans une impasse… ou Pepper va attendre indéfiniment un mot clef.&lt;/p&gt;
+&lt;div style=&quot;text-align:center&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZiwSsHlAMM8&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;La suite plus tard!
+Nous vous tiendrons informé de l’avancée de la formation et du projet, repassez souvent!&lt;/p&gt;
+</description>
+    </item>
+  </channel>
+</rss>
