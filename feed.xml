@@ -2,17 +2,43 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FastIT</title>
-    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
-    <link>http://localhost:8080</link>
+    <atom:link href="http://fastit.github.io//feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://fastit.github.io/</link>
     <description>FastIT Société Générale - Technical Blog</description>
-    <pubDate>Mon, 12 Sep 2016 02:00:00 +0200</pubDate>
+    <pubDate>Tue, 13 Sep 2016 02:00:00 +0200</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
+      <title>Pepper le retour 2!</title>
+      <link>http://fastit.github.io//articles/second-day-with-pepper/</link>
+      <pubDate>Tue, 13 Sep 2016 02:00:00 +0200</pubDate>
+      <guid isPermaLink="true">http://fastit.github.io//articles/second-day-with-pepper/</guid>
+      <author></author>
+      <description>&lt;p&gt;Pepper le retour 2!&lt;/p&gt;
+&lt;p&gt;Ce matin, travail avec la tablette de Pepper.
+C’est une tablette Android, pas très recente, mais suffisament (HTML5 ready)…&lt;/p&gt;
+&lt;h2 id=&quot;comment-on-discute-avec-la-tablette-depuis-le-robot-&quot;&gt;Comment on discute avec la tablette depuis le robot ?&lt;/h2&gt;
+&lt;p&gt;Pour bien comprendre comment ça fonctionne, d’abord qu’est ce que c’est que ce robot?&lt;/p&gt;
+&lt;p&gt;Pepper est donc un linux, avec pleins de péripheriques: des caméras, des haut parleurs, des capteurs, des moteurs, bref pleins (pleins). Qui dit peripheriques, dit drivers, et donc évenements qui sont remontés à l’OS. Charge au dev des applis d’écouter ces évenements ou pas. Tout ça est très simple dans choregraphe.&lt;/p&gt;
+&lt;p&gt;La tablette n’est pas un périphérique.
+C’est un autre système (Android), qui est accessible sur le réseaux du robot.&lt;/p&gt;
+&lt;p&gt;Donc la communication entre la tablette et le robot est faite à travers un nginx qui expose du contenu pour la tablette.
+Du contenu statique, disponible dans les behaviors (répertoire html à la racine du code des behaviors) et du contenu plus dynamic au travers d’un système de messaging (QiMessaging)
+On a aussi accés a une partie du SDK android depuis le robot et donc piloter la tablette à travers le SDK.&lt;/p&gt;
+&lt;p&gt;On va donc pouvoir démarrer une webview android sur la tablette, et faire pointer cette webview sur une URL de notre choix.&lt;/p&gt;
+&lt;p&gt;Un peu de magie intervient quand on charge dans notre appli web la librairie de messaging (fournie avec le robot), qui va communiquer avec le backend de messaging du robot, et donc créer un systeme de publish-subscribe entre l’appli web dans la webview de la tablette et le robot lui meme!&lt;/p&gt;
+&lt;p&gt;Et là, la tablette peut réagir à des évenements issu du robot, et emmettre des évenements pour alerter le robot d’action (touch par exemple) sur la tablette !&lt;/p&gt;
+&lt;h2 id=&quot;ce-qu-on-a-r-alis-&quot;&gt;Ce qu’on a réalisé?&lt;/h2&gt;
+&lt;p&gt;Et oui, on a mit Pepper au couleur de la SG !
+&lt;img src=&quot;/articles/second-day-with-pepper/pictures/IMG_20160913_171124.jpg&quot; alt=&quot;branded&quot;&gt;&lt;/p&gt;
+&lt;p&gt;So much Pride !&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>First Day with Pepper</title>
-      <link>http://localhost:8080/articles/first-day-with-pepper/</link>
+      <link>http://fastit.github.io//articles/first-day-with-pepper/</link>
       <pubDate>Mon, 12 Sep 2016 02:00:00 +0200</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/articles/first-day-with-pepper/</guid>
+      <guid isPermaLink="true">http://fastit.github.io//articles/first-day-with-pepper/</guid>
       <author></author>
       <description>&lt;p&gt;Bienvenue sur le blog de FastIT&lt;/p&gt;
 &lt;p&gt;Nous avons le grand privilège d’être dans les locaux d’IBM pour nous former à l’utilisation du robot Pepper de la société Aldebaran.&lt;/p&gt;
@@ -32,6 +58,7 @@ Le lexique est défini pour un scénario de &lt;em&gt;dialog&lt;/em&gt;.&lt;/p&g
 &lt;p&gt;Ce qu’il faut en retenir, c’est que les dialogues sont au final des scripts, si on se trouve dans un cas non traité on fait partir le dialogue dans une impasse… ou Pepper va attendre indéfiniment un mot clef.&lt;/p&gt;
 &lt;div style=&quot;text-align:center&quot;&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZiwSsHlAMM8&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
 
 &lt;p&gt;La suite plus tard!
 Nous vous tiendrons informé de l’avancée de la formation et du projet, repassez souvent!&lt;/p&gt;
