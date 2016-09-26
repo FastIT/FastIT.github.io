@@ -14,11 +14,14 @@
       <pubDate>Tue, 13 Sep 2016 02:00:00 +0200</pubDate>
       <guid isPermaLink="true">http://fastit.github.io//articles/second-day-with-pepper/</guid>
       <author></author>
-      <description>&lt;p&gt;Pepper le retour 2!&lt;/p&gt;
+      <description>&lt;h1 id=&quot;la-tablette&quot;&gt;La tablette&lt;/h1&gt;
 &lt;p&gt;Ce matin, travail avec la tablette de Pepper.
 C’est une tablette Android, pas très recente, mais suffisament (HTML5 ready)…&lt;/p&gt;
 &lt;h2 id=&quot;comment-on-discute-avec-la-tablette-depuis-le-robot-&quot;&gt;Comment on discute avec la tablette depuis le robot ?&lt;/h2&gt;
 &lt;p&gt;Pour bien comprendre comment ça fonctionne, d’abord qu’est ce que c’est que ce robot?&lt;/p&gt;
+&lt;p&gt;Macro architecture of the robot
+&lt;img src=&quot;/articles/second-day-with-pepper/pictures/Archi-Pepper.png&quot; alt=&quot;betterthanwords&quot;&gt;
+&lt;span style=&quot;font-size:smaller&quot;&gt;An image is better than words !&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Pepper est donc un linux, avec pleins de péripheriques: des caméras, des haut parleurs, des capteurs, des moteurs, bref pleins (pleins). Qui dit peripheriques, dit drivers, et donc évenements qui sont remontés à l’OS. Charge au dev des applis d’écouter ces évenements ou pas. Tout ça est très simple dans choregraphe.&lt;/p&gt;
 &lt;p&gt;La tablette n’est pas un périphérique.
 C’est un autre système (Android), qui est accessible sur le réseaux du robot.&lt;/p&gt;

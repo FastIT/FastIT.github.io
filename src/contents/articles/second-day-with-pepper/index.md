@@ -5,7 +5,7 @@ date: 2016-09-13
 template: article.jade
 ---
 
-Pepper le retour 2!
+# La tablette
 
 Ce matin, travail avec la tablette de Pepper.
 C'est une tablette Android, pas très recente, mais suffisament (HTML5 ready)...
@@ -13,6 +13,11 @@ C'est une tablette Android, pas très recente, mais suffisament (HTML5 ready)...
 ## Comment on discute avec la tablette depuis le robot ?
 
 Pour bien comprendre comment ça fonctionne, d'abord qu'est ce que c'est que ce robot?
+
+
+Macro architecture of the robot
+![betterthanwords](pictures/Archi-Pepper.png)
+<span style="font-size:smaller">An image is better than words !</span>
 
 
 Pepper est donc un linux, avec pleins de péripheriques: des caméras, des haut parleurs, des capteurs, des moteurs, bref pleins (pleins). Qui dit peripheriques, dit drivers, et donc évenements qui sont remontés à l'OS. Charge au dev des applis d'écouter ces évenements ou pas. Tout ça est très simple dans choregraphe.
